@@ -1,0 +1,57 @@
+@import "../../vars.css";
+.container {
+  position: relative; /* Ensure the container is positioned */
+  padding: 20px; /* Optional: Add padding for spacing */
+  background-color: #0c0c0c99;
+  margin-top: 20px;
+}
+
+.text {
+  position: relative; /* Position the text container */
+  margin-bottom: 20px; /* Space between the title and links */
+  text-decoration: none;
+}
+
+.text h2{
+  font-size: 60px;
+  color: white;
+}
+
+.text p{
+  color: whitesmoke;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.links {
+  display: flex; /* Use flexbox to arrange links in a row */
+  gap: 20px; /* Space between each link */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-decoration: none;
+}
+
+.link {
+  display: flex; /* Align items within each link */
+  align-items: center; /* Vertically center items */
+  text-decoration: none;
+}
+
+.link img {
+  margin-right: 10px; /* Space between icon and text */
+  background-color: transparent;
+}
+
+.link a{
+  text-decoration: none;
+  color: white;
+}
+.footer-note {
+  position: absolute; /* Position absolutely within the footer */
+  bottom: 10px; /* Distance from the bottom */
+  right: 10px; /* Distance from the right */
+  font-size: 12px; /* Adjust font size as needed */
+  color: white; /* Optional: Adjust text color */
+  font-size: 20px;
+}

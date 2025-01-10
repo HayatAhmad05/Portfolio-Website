@@ -1,0 +1,28 @@
+[
+    {
+      "title": "Spotify Desktop Assistant",
+      "imageSrc": "/projects/spot.png",
+      "description": "An ESP32 project allowing you to display your current Spotify song information onto a TFT display, using the Spotify API.",
+      "skills": ["ESP32", "C++", "Electrical Skills","Arduino","Python"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/HayatAhmad05/spotify-car-thing-V1"
+    },
+    {
+      "title": "Custom Macropad",
+      "imageSrc": "/projects/macropad.png",
+      "description": "Designed a custom 3X3 matrix PCB for a macropad, optimizing layout for efficient keypress registration and durability.",
+      "skills": ["Python", "PCB", "Electrical Skills","CAD"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/HayatAhmad05/macropad-v1"
+    },
+    {
+      "title": "Portfolio Website",
+      "imageSrc": "/projects/Screenshot 2025-01-10 at 1.36.50 AM.png",
+      "description": "Designed and developed a portfolio website utilizing React.js. Integrated a 3D Model Viewer with camera controls and auto-rotate",
+      "skills": ["HTML", "CSS", "React", "Three.js", "JavaScript"],
+      "demo": "",
+      "source": "https://github.com/HayatAhmad05/portfolio-v1"
+
+
+    }
+  ]
