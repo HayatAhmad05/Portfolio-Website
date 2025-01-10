@@ -1,0 +1,42 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "/skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "/skills/css.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "/skills/react.png"
+    },
+    {
+      "title": "C++",
+      "imageSrc": "/skills/c++.png"
+    },
+    {
+      "title": "Python",
+      "imageSrc": "/skills/python.png"
+    },
+    {
+      "title": "JavaScript",
+      "imageSrc": "/skills/javascript.png"
+    },
+    {
+      "title": "Figma",
+      "imageSrc": "/skills/figma.png"
+    },
+    {
+      "title": "Raspberry Pi",
+      "imageSrc": "/skills/pi.png"
+    },
+    {
+      "title": "Arduino",
+      "imageSrc": "/skills/arduino.png"
+    },
+    {
+      "title": "Git",
+      "imageSrc": "/skills/git.png"
+    }
+  ]

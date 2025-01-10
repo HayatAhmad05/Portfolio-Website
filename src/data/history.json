@@ -1,0 +1,34 @@
+[
+    {
+        "role": "Electrical Subteam Member",
+        "organisation": "UW Orbital Design Team",
+        "startDate": "Sep 2024",
+        "endDate": "Current",
+        "experiences": [ ],
+        "imageSrc": "/history/orbital.png"
+    },
+    {
+      "role": "Machine Learning & Data Collection Intern",
+      "organisation": "Uplift AI",
+      "startDate": "Jun 2024",
+      "endDate": "Aug 2024",
+      "experiences": [],
+      "imageSrc": "/history/uplift.png"
+    },
+    {
+      "role": "Technical Team Intern",
+      "organisation": "Tetra Pak",
+      "startDate": "Aug 2023",
+      "endDate": "Nov 2023",
+      "experiences": [],
+      "imageSrc": "/history/tetra.png"
+    },
+    {
+      "role": "SWE Intern",
+      "organisation": "National University of Science and Technology",
+      "startDate": "Jun 2023",
+      "endDate": "Aug 2023",
+      "experiences": [],
+      "imageSrc": "/history/nust.png"
+    }
+  ]
