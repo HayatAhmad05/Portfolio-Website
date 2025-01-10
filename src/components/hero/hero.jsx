@@ -43,7 +43,7 @@ export const Hero = () => {
             <div className={styles.content}>
                 <article>
                     <h1 className={styles.title}>
-                        Hi, I'm <span>{text}</span>
+                        Hi, I'm <span className={styles.text}>{text}</span>
                         <span className={styles.cursor}></span>
                     </h1>
                 </article>
