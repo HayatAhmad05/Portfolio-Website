@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "./hero.module.css";
 import ModelViewer from "../model-viewer/model-viewer";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+import { motion } from "framer-motion";
+
+
 
 export const Hero = () => {
     const words = ["Hayat Ahmad", "a Developer", "an Engineer"]; // Words to display
@@ -50,10 +56,14 @@ export const Hero = () => {
                 <p className={styles.desc}>
                     Computer Engineering @ University of Waterloo
                 </p>
-
-                <a href="/assets/Resume-WW.pdf" className={styles.contactbtn} target="_blank" rel="noopener noreferrer">
-                    Resume
-                </a>
+                <motion.div className={styles.social} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.5 }}>
+                    <div className={styles.social}>
+                        <a href="https://www.linkedin.com/in/sayed-hayat-ahmad-31ba84257/" target="_blank"><FaLinkedinIn size={35} /></a>
+                        <a href="https://github.com/HayatAhmad05" target="_blank"><FaGithub size={35} /></a>
+                        <a href="mailto:sayed.hayat05@hotmail.com"><MdOutlineMail size={35} /></a> 
+                    </div>
+                </motion.div>
+                
             </div>
 
             <div className={styles.model}>

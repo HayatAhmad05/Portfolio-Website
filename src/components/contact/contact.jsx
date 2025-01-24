@@ -19,7 +19,7 @@ export const Contact = () => {
         </li>
         <li className={styles.link}>
           <img src="/assets/contact/github.png" alt="Github icon" width="25px" />
-          <a href="https://www.github.com/myname">github.com/HayatAhmad05</a>
+          <a href="https://www.github.com/HayatAhmad05">github.com/HayatAhmad05</a>
         </li>
       </ul>
       <div className={styles.footerNote}>@ 2025 Hayat Ahmad</div> {/* Add the footer note */}

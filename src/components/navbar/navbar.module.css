@@ -7,6 +7,7 @@
     justify-content: space-between;
     z-index: 2;
     margin: 0 10%;
+    border-radius: 5px;
 }
 
 .menu{
@@ -19,7 +20,13 @@
     list-style: none;
     margin-top: 20px;
 }
+.resume{
+    background-color: #0c0c0c99;
+    border-radius: 45px;
+    padding: 10px 20px;
+    font-size: 45px;
 
+}
 .menuItems a{
     position: relative;
     font-size: 25px;
@@ -32,7 +39,7 @@
     transform: translateY(-5px);
 }
 
-.menuItems a::after {
+.menuItems a:not(.resume)::after {
     content: '';
     position: absolute;
     left: 0;
@@ -44,7 +51,7 @@
     transition: transform 0.3s ease;
 }
 
-.menuItems a:hover::after {
+.menuItems a:not(.resume):hover::after {
     transform: scaleX(1);
 }
 
@@ -58,6 +65,7 @@
     color: var(--color-text);
     text-decoration: none;
     margin-top: 15px;
+    
 }
 
 @media screen and (max-width: 830px) {
@@ -98,6 +106,10 @@
     .menuOpen{
         display: flex;
         z-index: 1;
+    }
+
+    .resume{
+        background-color: transparent;
     }
 
 
