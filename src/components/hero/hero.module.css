@@ -1,4 +1,17 @@
 @import "../../vars.css";
+.iconRow {
+    display: flex;
+    align-items: center; /* Center the icons vertically */
+    gap: 20px; /* Equal spacing between icons */
+    margin-top: 20px; /* Add some spacing above the row */
+}
+
+.icon {
+    color: white; /* Default icon color */
+    font-size: 2rem; /* Adjust icon size */
+    text-decoration: none;
+}
+
 
 .container {
     position: relative;

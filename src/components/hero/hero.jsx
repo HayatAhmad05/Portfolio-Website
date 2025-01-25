@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons
 import styles from "./hero.module.css";
 import ModelViewer from "../model-viewer/model-viewer";
 
@@ -43,7 +44,7 @@ export const Hero = () => {
             <div className={styles.content}>
                 <article>
                     <h1 className={styles.title}>
-                        Hi, I'm <span className={styles.text}>{text}</span>
+                        Hi, Im <span className={styles.text}>{text}</span>
                         <span className={styles.cursor}></span>
                     </h1>
                 </article>
@@ -51,9 +52,18 @@ export const Hero = () => {
                     Computer Engineering @ University of Waterloo
                 </p>
 
-                <a href="/assets/Resume-WW.pdf" className={styles.contactbtn} target="_blank" rel="noopener noreferrer">
-                    Resume
-                </a>
+
+                <div className={styles.iconRow}>
+                    <a href="https://github.com/HayatAhmad05" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+                        <FaGithub />
+                    </a>
+                    <a href="https://www.linkedin.com/in/sayed-hayat-ahmad-31ba84257/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+                        <FaLinkedin />
+                    </a>
+                    <a href="mailto:sayed.hayat05@hotmail.com" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+                        <FaEnvelope />
+                    </a>
+                </div>
             </div>
 
             <div className={styles.model}>
