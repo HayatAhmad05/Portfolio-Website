@@ -21,12 +21,6 @@ export const About = () => {
                         on projects that involve PCB design and hardware.
                         <br></br>
                         <br></br>
-                        I'm also very interested in 3D Modeling. Currently,
-                        I'm working on a lightsaber from starwars, with a custom
-                        3D printed hilt and movement based sound effects using 
-                        an ESP32 and a gyroscope.
-                        <br></br>
-                        <br></br>
                         You can find my past experiences and some of my personal projects from the past year below
                         as well as their github repositories.
 

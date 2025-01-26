@@ -41,13 +41,29 @@
     font-family: var(--font-roboto);
     overflow: hidden; /* Ensures text doesn't overflow */
     white-space: nowrap; /* Prevents wrapping */
+    transform: translateY(-20px);
+    animation: fadeDown 0.8s ease-out forwards;
 }
+@keyframes fadeDown {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(-20px); /* Slightly above */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Normal position */
+    }
+}
+
 .desc {
     font-size: 25px;
     font-family: var(--font-roboto);
     margin-bottom: 50px;
     text-wrap: wrap;
     z-index: 4;
+    transform: translateY(-20px);
+    animation: fadeUp 0.8s ease-out forwards;
+
 }
 
 .contactbtn {
@@ -82,7 +98,6 @@
     left: 40vw;
     background: rgba(25, 55, 109, 0.7);
     filter: blur(200px);
-    z-index: 1;
 }
 
 .bottomblur {
@@ -92,9 +107,9 @@
     min-width: 350px;
     min-height: 350px;
     bottom: -100px;
-    left: 20vw;
+    left: 10vw;
     background: rgba(25, 55, 109, 0.7);
-    filter: blur(200px);
+    filter: blur(150px);
     z-index: 1;
 }
 .cursor {
@@ -102,6 +117,28 @@
     width: 0.15em;
     background-color: var(--color-text);
     animation: blink 0.7s step-end infinite;
+}
+
+.iconRow{
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+.icon{
+    transition: transform 0.3s ease;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(20px); /* Slightly above */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Normal position */
+    }
 }
 
 /* Typing effect */

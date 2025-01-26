@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons
 import styles from "./hero.module.css";
 import ModelViewer from "../model-viewer/model-viewer";
+import { motion } from 'framer-motion';
 
 export const Hero = () => {
     const words = ["Hayat Ahmad", "a Developer", "an Engineer"]; // Words to display
@@ -39,6 +40,16 @@ export const Hero = () => {
         return () => clearTimeout(timeout); // Cleanup timeout
     }, [text, isDeleting, wordIndex, words]);
 
+    const titleVariants = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    };
+
+    const descVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: 0.3 } }
+    };
+
     return (
         <section className={styles.container} id="hero">
             <div className={styles.content}>
@@ -53,7 +64,8 @@ export const Hero = () => {
                 </p>
 
 
-                <div className={styles.iconRow}>
+
+               <div className={styles.iconRow}>
                     <a href="https://github.com/HayatAhmad05" target="_blank" rel="noopener noreferrer" className={styles.icon}>
                         <FaGithub />
                     </a>
@@ -63,7 +75,7 @@ export const Hero = () => {
                     <a href="mailto:sayed.hayat05@hotmail.com" target="_blank" rel="noopener noreferrer" className={styles.icon}>
                         <FaEnvelope />
                     </a>
-                </div>
+               </div>
             </div>
 
             <div className={styles.model}>
