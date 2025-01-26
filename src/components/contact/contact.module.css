@@ -66,7 +66,7 @@ textarea {
   grid-column: 2 / 2;
   padding-left: 100px;
   color: var(--color-text);
-  padding: 30px;
+  padding-left: 30px;
   border-radius: 10px;
 }
 

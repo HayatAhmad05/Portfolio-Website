@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./Contact.module.css";
 import { LuPhone } from "react-icons/lu";
 import { FaGithub, FaLinkedin, FaEnvelope, FaItchIo } from "react-icons/fa";
-import Clock from 'react-live-clock';
-
+import Clock from 'react-clock'
 
 
 export const Contact = () => {
@@ -50,10 +49,6 @@ export const Contact = () => {
                     </ul>
                 </div>
 
-                <div className={styles.location}>
-                    <h2>Location</h2>
-                    <p>Toronto, Canada</p>
-                </div>
             </div>
         </section>
     );
