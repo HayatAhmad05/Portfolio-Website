@@ -1,18 +1,26 @@
 @import "../../vars.css";
 
-.container {
-  margin-top: 76px;
-  color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
 .title {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .projects {
   margin-top: 37px;
@@ -23,4 +31,39 @@
   justify-content: center;
   gap: 15px;
   width: 100%;
+}
+
+.projects > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.projects > *:nth-child(1) { animation-delay: 0.2s; }
+.projects > *:nth-child(2) { animation-delay: 0.4s; }
+.projects > *:nth-child(3) { animation-delay: 0.6s; }
+.projects > *:nth-child(4) { animation-delay: 0.8s; }
+/* Add more if you have more projects */
+
+.container {
+  margin-top: 76px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.container.animate {
+  opacity: 1;
+}
+
+.container.animate .title,
+.container.animate .projects > * {
+  animation-play-state: running;
+}
+
+.title,
+.projects > * {
+  animation-play-state: paused;
 }

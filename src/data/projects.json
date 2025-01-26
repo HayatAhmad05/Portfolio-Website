@@ -1,9 +1,9 @@
 [
     {
       "title": "Spotify Desktop Assistant",
-      "imageSrc": "/projects/spot.png",
+      "imageSrc": "/projects/img.png",
       "description": "An ESP32 project allowing you to display your current Spotify song information onto a TFT display, using the Spotify API.",
-      "skills": ["ESP32", "C++", "Electrical Skills","Arduino","Python"],
+      "skills": ["ESP32", "C++","Python"],
       "demo": "https://www.example.com",
       "source": "https://github.com/HayatAhmad05/spotify-car-thing-V1"
     },
@@ -17,7 +17,7 @@
     },
     {
       "title": "Portfolio Website",
-      "imageSrc": "/projects/Screenshot 2025-01-10 at 1.36.50 AM.png",
+      "imageSrc": "/projects/spot.jpg",
       "description": "Designed and developed a portfolio website utilizing React.js. Integrated a 3D Model Viewer with camera controls and auto-rotate",
       "skills": ["HTML", "CSS", "React", "Three.js", "JavaScript"],
       "demo": "",

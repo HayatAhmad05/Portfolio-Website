@@ -25,7 +25,7 @@
 }
 
 .title {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 900;
 }
 
@@ -43,6 +43,7 @@
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
+  font-size: 5px;
 }
 
 .skill {
