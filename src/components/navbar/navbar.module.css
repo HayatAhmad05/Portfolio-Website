@@ -11,6 +11,9 @@
 
 .menu{
     display: flex;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeDown 0.5s ease-out forwards;
 }
 
 .menuItems{
@@ -67,7 +70,21 @@
     color: var(--color-text);
     text-decoration: none;
     margin-top: 15px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeDown 0.5s ease-out forwards;
 }
+@keyframes fadeDown {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(-20px); /* Slightly above */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Normal position */
+    }
+}
+
 
 @media screen and (max-width: 830px) {
     .navbar{
