@@ -41,7 +41,7 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="/public/assets/Resume_EXT.pdf" target="_blank" className={`${styles.resume} ${styles.hoverEffect}`}>
+                            <a href="https://drive.google.com/file/d/1evOZgSa1F3A0K6JwA4tp0zbdaLAWTSSA/view?usp=sharing" target="_blank" className={styles.resume}>
                                 Resume
                             </a>
                         </li>

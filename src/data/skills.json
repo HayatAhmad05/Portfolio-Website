@@ -28,7 +28,7 @@
       "imageSrc": "/skills/figma.png"
     },
     {
-      "title": "Raspberry Pi",
+      "title": "Rasp-Pi",
       "imageSrc": "/skills/pi.png"
     },
     {
@@ -38,5 +38,11 @@
     {
       "title": "Git",
       "imageSrc": "/skills/git.png"
-    }
+    },
+  {
+    "title": "C#",
+    "imageSrc": "/skills/csharp.png"
+
+
+  }
   ]

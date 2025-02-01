@@ -28,7 +28,7 @@
     font-size: 25px;
     color: var(--color-text);
     text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: 0.3s ease, text-decoration 0.3s ease;
 }
 
 .menuItem:hover{
@@ -52,9 +52,7 @@
 }
 
 .resume{
-    background: var(--color-bg);
     border-radius: 100px;
-    padding: 10px 20px;
     color: var(--color-text);
     text-decoration: none;
 }

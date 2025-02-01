@@ -1,9 +1,9 @@
 [
     {
-      "title": "Spotify Desktop Assistant",
+      "title": "Spotify Assistant",
       "imageSrc": "/projects/img.png",
       "description": "An ESP32 project allowing you to display your current Spotify song information onto a TFT display, using the Spotify API.",
-      "skills": ["ESP32", "C++","Python"],
+      "skills": [],
       "demo": "https://www.example.com",
       "source": "https://github.com/HayatAhmad05/spotify-car-thing-V1"
     },
@@ -11,7 +11,7 @@
       "title": "Custom Macropad",
       "imageSrc": "/projects/macropad.png",
       "description": "Designed a custom 3X3 matrix PCB for a macropad, optimizing layout for efficient keypress registration and durability.",
-      "skills": ["Python", "PCB", "Electrical Skills","CAD"],
+      "skills": [],
       "demo": "https://www.example.com",
       "source": "https://github.com/HayatAhmad05/macropad-v1"
     },
@@ -19,10 +19,25 @@
       "title": "Portfolio Website",
       "imageSrc": "/projects/spot.jpg",
       "description": "Designed and developed a portfolio website utilizing React.js. Integrated a 3D Model Viewer with camera controls and auto-rotate",
-      "skills": ["HTML", "CSS", "React", "Three.js", "JavaScript"],
+      "skills": [],
       "demo": "",
       "source": "https://github.com/HayatAhmad05/portfolio-v1"
+    },
+  {
+    "title": "The Heart That Fed",
+    "imageSrc": "/projects/comingsoon.jpg",
+    "description": "Game Entry for the BIGMODE Game Jam 2025. Resource management game with the theme of 'Power'. Created using Godot in collaboration with SleepWalker Studios",
+    "skills": [],
+    "demo": "",
+    "source": "https://github.com/jeremypoulin/The-Heart-That-Fed"
+  },
+  {
+    "title": "Wirless Keyboard PCB",
+    "imageSrc": "/projects/comingsoon.jpg",
+    "description": "Custom designed PCB on Altium Designer for a Wireless Bluetooth 60% Keyboard using an ESP32 as the brains. Integrating a TP4056 for a rechargeable battery using USB-C",
+    "skills": [],
+    "demo": "",
+    "source": "https://github.com/HayatAhmad05/Keyboard_PCB"
+  }
 
-
-    }
   ]
