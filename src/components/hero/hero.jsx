@@ -5,7 +5,7 @@ import ModelViewer from "../model-viewer/model-viewer";
 import { motion } from 'framer-motion';
 
 export const Hero = () => {
-    const words = ["Hayat Ahmad", "a Developer", "an Engineer"]; // Words to display
+    const words = ["Hayat Ahmad", "a Hardware Enthusiast", "a Computer Engineer"]; // Words to display
     const typingSpeed = 150; // Speed for typing each character (ms)
     const deletingSpeed = 100; // Speed for deleting each character (ms)
     const delayBetweenWords = 1000; // Delay before starting to delete (ms)
@@ -55,35 +55,24 @@ export const Hero = () => {
             <div className={styles.content}>
                 <article>
                     <h1 className={styles.title}>
-                        Hi, Im <span className={styles.text}>{text}</span>
-                        <span className={styles.cursor}></span>
+                        <span className={styles.grey}>Hello I'm </span>
+                        <span className={styles.text}>{text}</span>
                     </h1>
+                    <h1 className={styles.para}>
+                        <span className={styles.paraText}>
+                        Building intelligent systems with a love for <span className={styles.grey}> embedded tech</span>, clean code, and good design.</span>
+                    </h1>
+
+                    <div className={styles.buttonContainer}>
+                        <a href="mailto:sh2ahmad@uwaterloo.ca" className={styles.contactButton}>
+                            Let's get in touch
+                        </a>
+                    </div>
                 </article>
-                <p className={styles.desc}>
-                    Computer Engineering @ University of Waterloo
-                </p>
-
-
-
-               <div className={styles.iconRow}>
-                    <a href="https://github.com/HayatAhmad05" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-                        <FaGithub />
-                    </a>
-                    <a href="https://www.linkedin.com/in/sayed-hayat-ahmad-31ba84257/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-                        <FaLinkedin />
-                    </a>
-                    <a href="mailto:sayed.hayat05@hotmail.com" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-                        <FaEnvelope />
-                    </a>
-               </div>
             </div>
 
-            <div className={styles.model}>
-                <ModelViewer />
-            </div>
 
-            <div className={styles.topblur}></div>
-            <div className={styles.bottomblur}></div>
+
         </section>
     );
 };

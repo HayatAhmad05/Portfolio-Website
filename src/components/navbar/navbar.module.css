@@ -3,126 +3,140 @@
 .navbar {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 10%;
+    align-items: center; 
+    justify-content: center;
+    margin: 20px auto 0;
+    max-width: 800px;
+    width: 60%;
     z-index: 2;
+    background-color: black;
+    border-radius: 50px;
+    padding: 15px 30px;
 }
 
-.menu{
+.menu {
     display: flex;
+    align-items: center;
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeDown 0.8s ease-out forwards;
 }
 
-.menuItems{
+.menuItems {
     display: flex;
+    align-items: center;
     gap: 50px;
     list-style: none;
-    margin-top: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.menuItems a{
+.menuItems a {
     position: relative;
     font-size: 25px;
-    color: var(--color-text);
-    text-decoration: none;
-    transition: 0.3s ease, text-decoration 0.3s ease;
+    color: white;
+    font-weight: 300;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-.menuItem:hover{
-    transform: translateY(-5px);
+/* Apply the same hover effect to all menu items */
+.menuItems a:hover {
+    color: white !important;
+    transform: translateY(-5px); /* Move up 5px on hover - same as resume */
 }
 
+/* Remove the underline animation effect */
 .menuItems a:not(.resume)::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-text);
-    transform: scaleX(0);
+    content: none; /* Remove the underline effect completely */
+}
+
+.resume {
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
     transition: transform 0.3s ease;
 }
 
-.menuItems a:not(.resume):hover::after {
-    transform: scaleX(1);
+.resume:hover {
+    color: white;
+    transform: translateY(-5px);
 }
 
-.resume{
-    border-radius: 100px;
-    color: var(--color-text);
-    text-decoration: none;
-}
-
-
-.menuBtn{
+.menuBtn {
     display: none;
 }
 
 .title {
     position: relative;
     font-size: 35px;
-    color: var(--color-text);
+    color: white;
     text-decoration: none;
     margin-top: 15px;
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeDown 0.8s ease-out forwards;
 }
+
+.logo {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeDown 0.8s ease-out forwards;
+}
+
 @keyframes fadeDown {
     0% {
-        opacity: 0; /* Fully transparent */
-        transform: translateY(-20px); /* Slightly above */
+        opacity: 0;
+        transform: translateY(-20px);
     }
     100% {
-        opacity: 1; /* Fully visible */
-        transform: translateY(0); /* Normal position */
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-
 @media screen and (max-width: 830px) {
-    .navbar{
+    .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        width: 90%;
+        padding: 15px 20px;
     }
 
-    .menu{
+    .menu {
         position: absolute;
         right: 0;
-        margin-right: 10%;
+        margin-right: 5%;
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
         z-index: 3;
     }
 
-    .menuBtn{
+    .menuBtn {
         display: block;
         cursor: pointer;
         margin-top: 15px;
         margin-right: -50px;
     }
 
-    .menuItems{
+    .menuItems {
         display: none;
         flex-direction: column;
         align-items: center;
         gap: 12px;
         border-radius: 10px;
-        background: rgba(25, 55, 109);
-        background: linear-gradient(0deg,rgba(25,55,109,0.2) 0%, rgba(25,55,109,1) 100%);
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+        background-color: black;
+        padding: 10px 15px;
+        border-radius: 15px;
     }
 
-    .menuOpen{
+    .menuOpen {
         display: flex;
         z-index: 1;
     }
-
-
 }

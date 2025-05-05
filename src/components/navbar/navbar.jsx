@@ -6,7 +6,6 @@ export const Navbar = () => {
 
     return (
         <nav className={styles.navbar}>
-            <div className={`${styles.title} ${styles.animateTitle}`}>Hayat Ahmad</div>
             <div className={styles.menu}>
                 <img
                     className={styles.menuBtn}
@@ -41,7 +40,12 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/1evOZgSa1F3A0K6JwA4tp0zbdaLAWTSSA/view?usp=sharing" target="_blank" className={styles.resume}>
+                            <a
+                                href="/assets/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.resume}
+                            >
                                 Resume
                             </a>
                         </li>

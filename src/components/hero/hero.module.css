@@ -12,7 +12,18 @@
     text-decoration: none;
 }
 
+.span{
+    display: inline;
+}
 
+.grey{
+    color: #4a4a4a; /* Darker gray */
+}
+.greeting{
+    font-size: 25px;
+    font-family: var(--font-roboto);
+    z-index: 4;
+}
 .container {
     position: relative;
     display: flex;
@@ -35,14 +46,27 @@
 }
 
 .title {
-    font-size: 65px;
+    font-size: 50px;
+    font-weight: 1000;
+    font-family: var(--font-roboto);
+    overflow-wrap: break-word;
+    white-space: normal; /* Prevents wrapping */
+    transform: translateY(-20px);
+    animation: fadeDown 0.8s ease-out forwards;
+    word-wrap: break-word;
+}
+
+.para{
+    color: black;
+    font-size: 100px;
     font-weight: 1000;
     margin-bottom: 35px;
     font-family: var(--font-roboto);
-    overflow: hidden; /* Ensures text doesn't overflow */
-    white-space: nowrap; /* Prevents wrapping */
+    overflow-wrap: break-word;
+    white-space: normal; /* Prevents wrapping */
     transform: translateY(-20px);
     animation: fadeDown 0.8s ease-out forwards;
+    word-wrap: break-word;
 }
 @keyframes fadeDown {
     0% {
@@ -88,30 +112,6 @@
     z-index: 1;
 }
 
-.topblur {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    min-width: 350px;
-    min-height: 350px;
-    top: -100px;
-    left: 40vw;
-    background: rgba(25, 55, 109, 0.7);
-    filter: blur(200px);
-}
-
-.bottomblur {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    min-width: 350px;
-    min-height: 350px;
-    bottom: -100px;
-    left: 10vw;
-    background: rgba(25, 55, 109, 0.7);
-    filter: blur(150px);
-    z-index: 1;
-}
 .cursor {
     display: inline-block;
     width: 0.15em;
@@ -130,6 +130,38 @@
 .icon:hover{
     transform: scale(1.2);
 }
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-start; /* Change from center to flex-start to align left */
+    margin-top: 2rem;
+}
+
+.contactButton {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Match the resume transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* For <a> tag styling */
+}
+
+.contactButton:hover {
+    color: white !important; /* Force white color on hover with !important */
+    transform: translateY(-5px); /* Same upward movement as resume */
+}
+
+.contactButton:active {
+    transform: translateY(-1px);
+    color: white !important; /* Also ensure white color when active */
+}
+
 @keyframes fadeUp {
     0% {
         opacity: 0; /* Fully transparent */
