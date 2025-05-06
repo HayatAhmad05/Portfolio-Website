@@ -8,13 +8,6 @@ export const ProjectCard = ({
 }) => {
   return (
     <div className={styles.container} href={source}>
-        <a href={source} target="_blank" rel="noopener noreferrer">
-            <img
-                src={imageSrc}
-                alt={`Image of ${title}`}
-                className={styles.image}
-            />
-        </a>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <ul className={styles.skills}>

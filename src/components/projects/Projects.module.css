@@ -2,12 +2,13 @@
 
 
 .title {
-  font-size: 35px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 1000;
   letter-spacing: 1.75px;
   text-transform: uppercase;
   opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
+  color: white;
 }
 
 @keyframes fadeInUp {

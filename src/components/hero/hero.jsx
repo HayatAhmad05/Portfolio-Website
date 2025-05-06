@@ -57,6 +57,7 @@ export const Hero = () => {
                     <h1 className={styles.title}>
                         <span className={styles.grey}>Hello I'm </span>
                         <span className={styles.text}>{text}</span>
+                        <span className={styles.cursor}></span>
                     </h1>
                     <h1 className={styles.para}>
                         <span className={styles.paraText}>

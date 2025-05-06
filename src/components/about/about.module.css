@@ -35,7 +35,7 @@
 
 .container{
     position: relative;
-    background-color: #0c0c0c99;
+    background-color: #4a4a4a;
     border-radius: 15px;
     padding: 75px;
     margin-top: 100px;
@@ -45,7 +45,7 @@
 }
 
 .title{
-    color: var(--color-text);
+    color: white;
     font-size: 45px;
     font-weight: 700;
     letter-spacing: 1.75px;
@@ -65,7 +65,7 @@
 
 .aboutme h3{
     font-size: 40px;
-    color: var(--color-text);
+    color: white;
     padding-bottom: 20px;
 }
 
@@ -76,7 +76,7 @@
     animation: fadeInRight 0.8s ease-out 0.4s forwards;
 }
 .aboutme p{
-    color: var(--color-text);
+    color: white;
     font-size: 30px;
 }
 

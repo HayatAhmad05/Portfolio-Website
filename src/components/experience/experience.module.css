@@ -29,31 +29,58 @@
   gap: 37px;
 }
 
+/* Add hover animation to skill items */
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 11px;
+  transition: transform 0.3s ease; /* Add smooth transition for all transforms */
+}
+
+/* Add hover effect to entire skill component */
+.skill:hover {
+  transform: translateY(-8px); /* Move the whole skill item up on hover */
 }
 
 .skillImageContainer {
-  background-color: var(--color-secondary);
+  background-color: #4a4a4a;
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 120px;
   height: 120px;
+  transition: all 0.3s ease; /* Add smooth transition for all animations */
+  overflow: hidden; /* Contains the bouncing image */
 }
 
+/* Add animation to the image inside the container */
 .skillImageContainer img {
-  width: 75px;
+  width: 70px;
+  transition: transform 0.3s ease; /* Smooth transition for the image */
+}
+
+/* Create the hover effect on the image */
+.skill:hover .skillImageContainer {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Move the image up when hovering over the skill */
+.skill:hover .skillImageContainer img {
+  transform: translateY(-5px) scale(1.1); /* Move up and slightly increase size */
 }
 
 .skill p {
-  font-size: 25px;
+  font-size: 30px;
   font-family: var(--font-roboto);
-  font-weight: 500;
+  font-weight: 800;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Optional: Change text color on hover */
+.skill:hover p {
+  color: var(--color-primary); /* Use your primary color for highlighted text */
 }
 
 .history {
@@ -68,19 +95,53 @@
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: #19376d;
-  background:#19376d;
+  background: #4a4a4a;
   border-radius: 10px;
   padding: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.historyItem:hover{
-    transform: translateY(-10px);
-    transition: 0.5s;
+/* New hover animation similar to the contact button */
+.historyItem:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
 
+/* Change text colors on hover */
+.historyItem:hover .historyItemDetails h3,
+.historyItem:hover .historyItemDetails p,
+.historyItem:hover .historyItemDetails ul li {
+  transition: color 0.3s ease;
+}
+
+/* Add a slight scale effect to the company image */
 .historyItem img {
   width: 75px;
+  transition: transform 0.3s ease;
+}
+
+.historyItem:hover img {
+  transform: scale(1.1);
+}
+
+/* Add a subtle shine/gradient overlay effect */
+.historyItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.historyItem:hover::before {
+  left: 100%;
+  transition: 0.5s;
 }
 
 .historyItemDetails {
@@ -88,17 +149,20 @@
 }
 
 .historyItemDetails h3 {
+  color: white;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 1000;
 }
 
 .historyItemDetails h4{
-  font-size: 20px;
+  font-size: 0px;
+  color: white;
 }
 
 .historyItemDetails p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 600;
+  color: white;
 }
 
 .historyItemDetails ul {

@@ -114,9 +114,11 @@
 
 .cursor {
     display: inline-block;
-    width: 0.15em;
-    background-color: var(--color-text);
-    animation: blink 0.7s step-end infinite;
+    width: 0.1em;
+    height: 0.8em; /* Add height to make the cursor more visible */
+    background-color: #4a4a4a; /* Change to your desired color */
+    margin-left: 2px; /* Small space between text and cursor */
+    animation: blink 1s step-end infinite;
 }
 
 .iconRow{
@@ -195,7 +197,7 @@
         border-color: transparent;
     }
     50% {
-        border-color: var(--color-text);
+        border-color: #4a4a4a;
     }
 }
 
